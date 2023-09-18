@@ -1,4 +1,4 @@
-# スマホの画面注視認識機能を簡易実装する
+
 
 ## はじめに
 [寝顔でスマホの顔認証ロックを解除　50万円の不正送金被害も　どう防ぐ?専門家に聞いた](https://news.yahoo.co.jp/articles/264b8520ffa8c1dd48fddcddd78811b7df28b822?page=1)というニュースがあり驚きました。悪い人はいろんなこと考えるんですね。
@@ -7,7 +7,7 @@
 
 このニュースで出てきた「画面注視認識機能」。要は、スマホの画面を見ているかどうかを認識する機能です。これを簡易的に実装してみました。
 
-![](assets/g848.png)
+![](https://raw.githubusercontent.com/yKesamaru/screen_gaze_function/master/assets/g848.png)
 
 ## 考え方
 カメラを注視している、ということは、虹彩が目の中心か、あるいは寄り目ぎみになっているということです。
@@ -16,7 +16,7 @@
 
 ## 入力動画
 
-![](assets/original.gif)
+![](https://raw.githubusercontent.com/yKesamaru/screen_gaze_function/master/assets/original.gif)
 <a href="https://pixabay.com/ja//?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=129427">Pixabay</a>が提供する<a href="https://pixabay.com/ja/users/piyapong89-7158719/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=129427">Piyapong Saydaung</a>の動画
 
 
@@ -51,7 +51,7 @@ https://github.com/yKesamaru/screen_gaze_function/blob/751b175bfb99ff8801df7580e
 
 
 ## 出力動画
-![](assets/processed.gif)
+![](https://raw.githubusercontent.com/yKesamaru/screen_gaze_function/master/assets/processed.gif)
 ```bash
 Right Eye is looking: center
 Left Eye is looking: center
