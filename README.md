@@ -9,6 +9,15 @@
 
 ![](https://raw.githubusercontent.com/yKesamaru/screen_gaze_function/master/assets/g848.png)
 
+- [はじめに](#はじめに)
+- [考え方](#考え方)
+- [入力動画](#入力動画)
+- [参考](#参考)
+- [実装](#実装)
+- [用意した関数](#用意した関数)
+- [出力動画](#出力動画)
+
+
 ## 考え方
 カメラを注視している、ということは、虹彩が目の中心か、あるいは寄り目ぎみになっているということです。
 虹彩の位置を確認するには`mediapipe`を使えばできそうですね。
@@ -17,8 +26,9 @@
 ## 入力動画
 
 ![](https://raw.githubusercontent.com/yKesamaru/screen_gaze_function/master/assets/original.gif)
-<a href="https://pixabay.com/ja//?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=129427">Pixabay</a>が提供する<a href="https://pixabay.com/ja/users/piyapong89-7158719/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=129427">Piyapong Saydaung</a>の動画
 
+- [Pixabay](https://pixabay.com/ja//?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=129427)
+- [Piyapong Saydaung](https://pixabay.com/ja/users/piyapong89-7158719/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=129427)
 
 ## 参考
 Kazuhito00様の[mediapipe-python-sample](https://github.com/Kazuhito00/mediapipe-python-sample/tree/main)を参考にさせていただきました。
