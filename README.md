@@ -7,9 +7,18 @@
 
 このニュースで出てきた「画面注視認識機能」。要は、スマホの画面を見ているかどうかを認識する機能です。これを簡易的に実装してみました。
 
+![](assets/g848.png)
+
 ## 考え方
 カメラを注視している、ということは、虹彩が目の中心か、あるいは寄り目ぎみになっているということです。
 虹彩の位置を確認するには`mediapipe`を使えばできそうですね。
+目の左端から右端にかけて1本の線を引き、その線の中心に虹彩があるかどうかを確認します。
+
+## 入力動画
+
+![](assets/original.gif)
+<a href="https://pixabay.com/ja//?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=129427">Pixabay</a>が提供する<a href="https://pixabay.com/ja/users/piyapong89-7158719/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=129427">Piyapong Saydaung</a>の動画
+
 
 ## 参考
 Kazuhito00様の[mediapipe-python-sample](https://github.com/Kazuhito00/mediapipe-python-sample/tree/main)を参考にさせていただきました。
@@ -22,4 +31,36 @@ Kazuhito00様の[mediapipe-python-sample](https://github.com/Kazuhito00/mediapip
 - [mediapipe/canonical_face_model_uv_visualization.png](https://github.com/google/mediapipe/blob/a908d668c730da128dfa8d9f6bd25d519d006692/mediapipe/modules/face_geometry/data/canonical_face_model_uv_visualization.png)
 
 ## 実装
+https://github.com/yKesamaru/screen_gaze_function/blob/751b175bfb99ff8801df7580ea7baf0e532081b0/screen_gaze_function.py#L1-L237
 
+
+## 用意した関数
+以下の6つの関数を用意しました。
+
+https://github.com/yKesamaru/screen_gaze_function/blob/751b175bfb99ff8801df7580ea7baf0e532081b0/screen_gaze_function.py#L29-L38
+
+https://github.com/yKesamaru/screen_gaze_function/blob/751b175bfb99ff8801df7580ea7baf0e532081b0/screen_gaze_function.py#L44-L55
+
+https://github.com/yKesamaru/screen_gaze_function/blob/751b175bfb99ff8801df7580ea7baf0e532081b0/screen_gaze_function.py#L80-L94
+
+https://github.com/yKesamaru/screen_gaze_function/blob/751b175bfb99ff8801df7580ea7baf0e532081b0/screen_gaze_function.py#L116-L126
+
+https://github.com/yKesamaru/screen_gaze_function/blob/751b175bfb99ff8801df7580ea7baf0e532081b0/screen_gaze_function.py#L139-L150
+
+https://github.com/yKesamaru/screen_gaze_function/blob/751b175bfb99ff8801df7580ea7baf0e532081b0/screen_gaze_function.py#L165-L178
+
+
+## 出力動画
+![](assets/processed.gif)
+```bash
+Right Eye is looking: center
+Left Eye is looking: center
+Right Eye is looking: center
+Left Eye is looking: left
+Right Eye is looking: left
+Left Eye is looking: left
+Right Eye is looking: left
+Left Eye is looking: left
+（前後省略）
+```
+この機能を使えば、画面の指示に従い虹彩を動かすことによって、マルチモーダルな認証を実現できるかもしれませんね。
